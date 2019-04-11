@@ -4,6 +4,56 @@ body {
 }
 
 .wrapper{
+    margin: 0;
     height: 100vh;
-    background-color: lightgreen;
+    background-image: url("../img/background_1.jpg") /* <!-- Photo by Thomas Chan on Unsplash --> */
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(248, 248, 255, 0.9);
+    position: fixed;
+}
+
+.page_title{
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.write{
+    background-color: lightblue;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.pen{
+    background-image: url("../img/feather_pen.svg");
+    background-size: 100%;
+}
+
+.content{
+    position: relative;
+    top: 20%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0px;
+    grid-template-rows: repeat(auto-fill, 50px);
+    margin: 0 20px 0 20px;
+}
+
+.quote{
+    color: white;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5rem;
 }
