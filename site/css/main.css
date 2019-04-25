@@ -4,56 +4,77 @@ body {
 }
 
 .wrapper{
-    margin: 0;
     height: 100vh;
-    background-image: url("../img/background_1.jpg") /* <!-- Photo by Thomas Chan on Unsplash --> */
 }
 
 header{
+    background-color: black;
+    height: 10%;
     width: 100%;
-    height: 20%;
-    background-color: rgba(248, 248, 255, 0.9);
     position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
-.page_title{
-    text-align: center;
-    vertical-align: bottom;
-    font-size: 4rem;
-    letter-spacing: 10px;
-    font-family: 'Gloria Hallelujah', cursive;
-}
-
-.write{
-    background-color: lightblue;
-    height: 80px;
-    width: 80px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-}
-
-.pen{
-    background-image: url("../img/feather_pen.svg");
-    background-size: 100%;
-}
-
-.content{
+.logo{
+    background-image: url("../img/Nätflex.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90%;
+    background-position: left;
     position: relative;
-    top: 20%; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 0px;
-    grid-template-rows: repeat(auto-fill, 50px);
-    margin: 0 20px 0 20px;
+    left: 5px;
 }
 
-.quote{
-    color: white;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 1.5rem;
+.scroll-area{
+    position: relative;
+    top: 10%;
+}
+
+.content-box{
+    
+}
+
+.boxy{
+    display: inline-block;
+    height: 225px;
+    width: 150px;
+    background-color: darkred;
+    margin: 5px;
+}
+
+.back-deco {
+    z-index: -10;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(50, 50, 50);
+}
+
+h2{
+    margin: 5px;
+    color: aliceblue;
+}
+
+.subheader{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .content-box{
+        overflow: auto;
+        white-space: nowrap;
+        grid-template: 0;
+    }
+
+    .boxy{
+        height: 180px;
+        width: 120px;
+    }
 }
