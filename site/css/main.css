@@ -32,14 +32,17 @@ header{
 }
 
 .content-box{
-    
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .boxy{
     display: inline-block;
-    height: 225px;
-    width: 150px;
+    height: 270px;
+    width: 180px;
     background-color: darkred;
+    background-size: 100%;
+    background-position: center;
     margin: 5px;
 }
 
@@ -52,18 +55,72 @@ header{
     background-color: rgb(50, 50, 50);
 }
 
-h2{
+.subheader h2{
     margin: 5px;
-    color: aliceblue;
+    color: gainsboro;
+    font-size: 2.5rem;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 .subheader{
     margin-top: 10px;
 }
 
+.splitter{
+    width: 95%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 
+
+
+#game_of_thrones{
+    background-image: url("../img/game_of_thrones.jpg");
+}
+
+#salad_fingers{
+    background-image: url("../img/salad\ fingers.jpg");
+}
+
+#avatar_the_last_airbender{
+    background-image: url("../img/avatar_the_last_airbender.jpg")
+}
+
+#sherlock{
+    background-image: url("../img/sherlock.jpg")
+}
+
+#death_note{
+    background-image: url("../img/death_note.jpg")
+}
+
+#strangers_tongue{
+    background-image: url("../img/stranger\'s\ tongue\ poster.jpg")
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1600px){ 
+    .boxy{
+        height: 270px;
+        width: 180px;
+    }
+
+    .subheader h2{
+        font-size: 1rem;
+    }
+}
 
 
 @media screen and (max-width: 500px){
@@ -74,7 +131,7 @@ h2{
     }
 
     .boxy{
-        height: 180px;
-        width: 120px;
+        height: 225px;
+        width: 150px;
     }
 }
