@@ -30,6 +30,18 @@ header{
     position: fixed;
     z-index: 100;
     top: 0;
+    display: inline-flex;
+}
+
+header h1{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: rgb(228, 228, 228);
+    margin: auto;
+    /* top: 20%;
+    left: 15%;
+    position: absolute; */
 }
 
 .logo{
@@ -37,9 +49,11 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     height: 90%;
+    width: inherit;
     background-position: left;
-    position: relative;
-    left: 5px;
+    margin-left: 10px;
+    /* position: relative; */
+    /* left: 5px; */
 }
 
 .scroll-area{
@@ -48,8 +62,7 @@ header{
 }
 
 .content-box{
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
 }
 
 .boxy{
@@ -69,29 +82,47 @@ header{
 .info{
     position: relative !important;
     left: 10px;
-    top: 5px;
+    top: 10px;
     color: white;
     text-shadow: 0px 0px 10px rgba(0,0,0,0.75);
     font-size: 1.5rem !important;
+    width: 30px;
+    height: 30px;
     visibility: hidden;
     cursor: default;
     /* display: inline-block; */
 }
 
-.description{
-    color: black;
-    text-shadow:  0 0 0;
-    font-size: 1rem;
-    position: relative;
-    left: 0 !important;
-    height: 100%;
-    visibility: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
+.info:hover .description{
+    visibility: visible;
+    animation: fadein 0.3s forwards;
 }
 
-#visible{
-    animation: fadein 0.5s forwards;
+.info:not(:hover) .description{
+    animation: fadeout 0.5s forwards;
 }
+
+.description{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 150px;
+    position: relative;
+    left: 0 !important;
+    visibility: hidden;
+    pointer-events: none !important;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.description p {
+    margin: 10px;
+    margin-top: 5px;
+    color: black;
+    text-shadow:  0 0 0;
+    font-family: Verdana;
+    font-size: 0.7rem;
+}
+
+
 
 .back-deco {
     z-index: -10;
@@ -151,8 +182,21 @@ header{
     background-image: url("../img/stranger\'s\ tongue\ poster.jpg")
 }
 
+#love_death_robots{
+    background-image: url("../img/love_death_robots.png")
+}
 
+#the_walking_dead{
+    background-image: url("../img/the_walking_dead.png")
+}
 
+#the_handmaids_tale{
+    background-image: url("../img/the_handmaid\'s_tale.png")
+}
+
+#westworld{
+    background-image: url("../img/westworld.png")
+}
 
 
 
@@ -167,6 +211,11 @@ header{
     .subheader h2{
         font-size: 1rem;
     }
+
+    header h1{
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 500px){
@@ -181,14 +230,22 @@ header{
 }
 
 @media screen and (max-width: 500px){
+    header h1{
+        font-size: 0.65rem;
+        margin-left: auto;
+    }
+
     .content-box{
         overflow: auto;
         white-space: nowrap;
-        grid-template: 0;
     }
 
     .boxy{
         height: 225px;
         width: 150px;
+    }
+
+    .info{
+        position: fixed !important;
     }
 }
