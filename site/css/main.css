@@ -150,7 +150,7 @@ header h1{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -198,7 +198,105 @@ header h1{
     background-image: url("../img/westworld.png")
 }
 
+#civil_war{
+    background-image: url("../img/civil\ war.png")
+}
 
+#shawshank_redemption{
+    background-image: url("../img/shawshank_redemption.png")
+}
+
+#pulp_fiction{
+    background-image: url("../img/pulp_fiction.png")
+}
+
+#lord_of_the_rings{
+    background-image: url("../img/lord_of_the_rings.png")
+}
+
+#forrest_gump{
+    background-image: url("../img/forrest_gump.png")
+}
+
+#spirited_away{
+    background-image: url("../img/spirited_away.png")
+}
+
+#avengers_endgame{
+    background-image: url("../img/avengers_endgame.png")
+}
+
+#interstellar{
+    background-image: url("../img/interstellar.png")
+}
+
+#explore{
+    background-image: url("../img/explore.png")
+}
+
+#house_of_cards{
+    background-image: url("../img/house_of_cards.png")
+}
+
+#dexter{
+    background-image: url("../img/dexter.png")
+}
+
+#orange_is_the_new_black{
+    background-image: url("../img/orange_is_the_new_black.png")
+}
+
+#six_feet_under{
+    background-image: url("../img/six_feet_under.png")
+}
+
+#downton_abbey{
+    background-image: url("../img/downton_abbey.png")
+}
+
+#the_good_place{
+    background-image: url("../img/the_good_place.png")
+}
+
+#x-files{
+    background-image: url("../img/x-files.png")
+}
+
+#sex_education{
+    background-image: url("../img/sex_education.png")
+}
+
+#vikings{
+    background-image: url("../img/vikings.png")
+}
+
+#the_office{
+    background-image: url("../img/the_office.png")
+}
+
+#broadchurch{
+    background-image: url("../img/broadchurch.png")
+}
+
+#jessica_jones{
+    background-image: url("../img/jessica_jones.png")
+}
+
+#lucifer{
+    background-image: url("../img/lucifer.png")
+}
+
+#catws{
+    background-image: url("../img/catws.png")
+}
+
+#riverdale{
+    background-image: url("../img/riverdale.png")
+}
+
+#daredevil{
+    background-image: url("../img/daredevil.png")
+}
 
 
 
@@ -209,11 +307,19 @@ header h1{
     }
 
     .subheader h2{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     header h1{
         font-size: 2rem;
+    }
+
+    .description{
+        width: 200px;
+    }
+
+    .description p{
+        font-size: 0.8rem;
     }
 
 }
