@@ -39,9 +39,6 @@ header h1{
     font-size: 1.2rem;
     color: rgb(228, 228, 228);
     margin: auto;
-    /* top: 20%;
-    left: 15%;
-    position: absolute; */
 }
 
 .logo{
@@ -52,8 +49,6 @@ header h1{
     width: inherit;
     background-position: left;
     margin-left: 10px;
-    /* position: relative; */
-    /* left: 5px; */
 }
 
 .scroll-area{
@@ -67,11 +62,9 @@ header h1{
 
 .boxy{
     display: inline-flex;
-    height: 270px;
+    height: 270px; /* A website pixel is apparently 1.5 of an image pixel...*/
     width: 180px;
     background-color: darkred;
-    background-size: 100%;
-    background-position: center;
     margin: 5px;
 }
 
@@ -90,7 +83,6 @@ header h1{
     height: 30px;
     visibility: hidden;
     cursor: default;
-    /* display: inline-block; */
 }
 
 .info:hover .description{
@@ -133,7 +125,7 @@ header h1{
     background-color: rgb(50, 50, 50);
 }
 
-.subheader h2{
+.subheader h1{
     margin: 5px;
     color: gainsboro;
     font-size: 2.5rem;
@@ -159,166 +151,154 @@ header h1{
 
 
 #game_of_thrones{
-    background-image: url("../img/game_of_thrones.jpg");
+    background-image: url("../img/270px/game_of_thrones.jpg");
 }
 
 #salad_fingers{
-    background-image: url("../img/salad\ fingers.jpg");
+    background-image: url("../img/270px/salad\ fingers.jpg");
 }
 
 #avatar_the_last_airbender{
-    background-image: url("../img/avatar_the_last_airbender.jpg")
+    background-image: url("../img/270px/avatar_the_last_airbender.jpg")
 }
 
 #sherlock{
-    background-image: url("../img/sherlock.jpg")
+    background-image: url("../img/270px/sherlock.jpg")
 }
 
 #death_note{
-    background-image: url("../img/death_note.jpg")
+    background-image: url("../img/270px/death_note.jpg")
 }
 
 #strangers_tongue{
-    background-image: url("../img/stranger\'s\ tongue\ poster.jpg")
+    background-image: url("../img/270px/stranger\'s\ tongue\ poster.jpg")
 }
 
 #love_death_robots{
-    background-image: url("../img/love_death_robots.png")
+    background-image: url("../img/270px/love_death_robots.jpg")
 }
 
 #the_walking_dead{
-    background-image: url("../img/the_walking_dead.png")
+    background-image: url("../img/270px/the_walking_dead.jpg")
 }
 
 #the_handmaids_tale{
-    background-image: url("../img/the_handmaid\'s_tale.png")
+    background-image: url("../img/270px/the_handmaid\'s_tale.jpg")
 }
 
 #westworld{
-    background-image: url("../img/westworld.png")
+    background-image: url("../img/270px/westworld.jpg")
 }
 
 #civil_war{
-    background-image: url("../img/civil\ war.png")
+    background-image: url("../img/270px/civil\ war.jpg")
 }
 
 #shawshank_redemption{
-    background-image: url("../img/shawshank_redemption.png")
+    background-image: url("../img/270px/shawshank_redemption.jpg")
 }
 
 #pulp_fiction{
-    background-image: url("../img/pulp_fiction.png")
+    background-image: url("../img/270px/pulp_fiction.jpg")
 }
 
 #lord_of_the_rings{
-    background-image: url("../img/lord_of_the_rings.png")
+    background-image: url("../img/270px/lord_of_the_rings.jpg")
 }
 
 #forrest_gump{
-    background-image: url("../img/forrest_gump.png")
+    background-image: url("../img/270px/forrest_gump.jpg")
 }
 
 #spirited_away{
-    background-image: url("../img/spirited_away.png")
+    background-image: url("../img/270px/spirited_away.jpg")
 }
 
 #avengers_endgame{
-    background-image: url("../img/avengers_endgame.png")
+    background-image: url("../img/270px/avengers_endgame.jpg")
 }
 
 #interstellar{
-    background-image: url("../img/interstellar.png")
+    background-image: url("../img/270px/interstellar.jpg")
 }
 
 #explore{
-    background-image: url("../img/explore.png")
+    background-image: url("../img/270px/explore.jpg")
 }
 
 #house_of_cards{
-    background-image: url("../img/house_of_cards.png")
+    background-image: url("../img/270px/house_of_cards.jpg")
 }
 
 #dexter{
-    background-image: url("../img/dexter.png")
+    background-image: url("../img/270px/dexter.jpg")
 }
 
 #orange_is_the_new_black{
-    background-image: url("../img/orange_is_the_new_black.png")
+    background-image: url("../img/270px/orange_is_the_new_black.jpg")
 }
 
 #six_feet_under{
-    background-image: url("../img/six_feet_under.png")
+    background-image: url("../img/270px/six_feet_under.jpg")
 }
 
 #downton_abbey{
-    background-image: url("../img/downton_abbey.png")
+    background-image: url("../img/270px/downton_abbey.jpg")
 }
 
 #the_good_place{
-    background-image: url("../img/the_good_place.png")
+    background-image: url("../img/270px/the_good_place.jpg")
 }
 
 #x-files{
-    background-image: url("../img/x-files.png")
+    background-image: url("../img/270px/x-files.jpg")
 }
 
 #sex_education{
-    background-image: url("../img/sex_education.png")
+    background-image: url("../img/270px/sex_education.jpg")
 }
 
 #vikings{
-    background-image: url("../img/vikings.png")
+    background-image: url("../img/270px/vikings.jpg")
 }
 
 #the_office{
-    background-image: url("../img/the_office.png")
+    background-image: url("../img/270px/the_office.jpg")
 }
 
 #broadchurch{
-    background-image: url("../img/broadchurch.png")
+    background-image: url("../img/270px/broadchurch.jpg")
 }
 
 #jessica_jones{
-    background-image: url("../img/jessica_jones.png")
+    background-image: url("../img/270px/jessica_jones.jpg")
 }
 
 #lucifer{
-    background-image: url("../img/lucifer.png")
+    background-image: url("../img/270px/lucifer.jpg")
 }
 
 #catws{
-    background-image: url("../img/catws.png")
+    background-image: url("../img/270px/catws.jpg")
 }
 
 #riverdale{
-    background-image: url("../img/riverdale.png")
+    background-image: url("../img/270px/riverdale.jpg")
 }
 
 #daredevil{
-    background-image: url("../img/daredevil.png")
+    background-image: url("../img/270px/daredevil.jpg")
 }
 
 
 
 @media screen and (min-width: 1600px){ 
-    .boxy{
-        height: 270px;
-        width: 180px;
-    }
-
-    .subheader h2{
-        font-size: 2rem;
-    }
-
-    header h1{
+    h1{
         font-size: 2rem;
     }
 
     .description{
         width: 200px;
-    }
-
-    .description p{
         font-size: 0.8rem;
     }
 
@@ -354,4 +334,146 @@ header h1{
     .info{
         position: fixed !important;
     }
+
+
+    #game_of_thrones{
+        background-image: url("../img/225px/game_of_thrones.jpg");
+    }
+    
+    #salad_fingers{
+        background-image: url("../img/225px/salad\ fingers.jpg");
+    }
+    
+    #avatar_the_last_airbender{
+        background-image: url("../img/225px/avatar_the_last_airbender.jpg")
+    }
+    
+    #sherlock{
+        background-image: url("../img/225px/sherlock.jpg")
+    }
+    
+    #death_note{
+        background-image: url("../img/225px/death_note.jpg")
+    }
+    
+    #strangers_tongue{
+        background-image: url("../img/225px/stranger\'s\ tongue\ poster.jpg")
+    }
+    
+    #love_death_robots{
+        background-image: url("../img/225px/love_death_robots.jpg")
+    }
+    
+    #the_walking_dead{
+        background-image: url("../img/225px/the_walking_dead.jpg")
+    }
+    
+    #the_handmaids_tale{
+        background-image: url("../img/225px/the_handmaid\'s_tale.jpg")
+    }
+    
+    #westworld{
+        background-image: url("../img/225px/westworld.jpg")
+    }
+    
+    #civil_war{
+        background-image: url("../img/225px/civil\ war.jpg")
+    }
+    
+    #shawshank_redemption{
+        background-image: url("../img/225px/shawshank_redemption.jpg")
+    }
+    
+    #pulp_fiction{
+        background-image: url("../img/225px/pulp_fiction.jpg")
+    }
+    
+    #lord_of_the_rings{
+        background-image: url("../img/225px/lord_of_the_rings.jpg")
+    }
+    
+    #forrest_gump{
+        background-image: url("../img/225px/forrest_gump.jpg")
+    }
+    
+    #spirited_away{
+        background-image: url("../img/225px/spirited_away.jpg")
+    }
+    
+    #avengers_endgame{
+        background-image: url("../img/225px/avengers_endgame.jpg")
+    }
+    
+    #interstellar{
+        background-image: url("../img/225px/interstellar.jpg")
+    }
+    
+    #explore{
+        background-image: url("../img/225px/explore.jpg")
+    }
+    
+    #house_of_cards{
+        background-image: url("../img/225px/house_of_cards.jpg")
+    }
+    
+    #dexter{
+        background-image: url("../img/225px/dexter.jpg")
+    }
+    
+    #orange_is_the_new_black{
+        background-image: url("../img/225px/orange_is_the_new_black.jpg")
+    }
+    
+    #six_feet_under{
+        background-image: url("../img/225px/six_feet_under.jpg")
+    }
+    
+    #downton_abbey{
+        background-image: url("../img/225px/downton_abbey.jpg")
+    }
+    
+    #the_good_place{
+        background-image: url("../img/225px/the_good_place.jpg")
+    }
+    
+    #x-files{
+        background-image: url("../img/225px/x-files.jpg")
+    }
+    
+    #sex_education{
+        background-image: url("../img/225px/sex_education.jpg")
+    }
+    
+    #vikings{
+        background-image: url("../img/225px/vikings.jpg")
+    }
+    
+    #the_office{
+        background-image: url("../img/225px/the_office.jpg")
+    }
+    
+    #broadchurch{
+        background-image: url("../img/225px/broadchurch.jpg")
+    }
+    
+    #jessica_jones{
+        background-image: url("../img/225px/jessica_jones.jpg")
+    }
+    
+    #lucifer{
+        background-image: url("../img/225px/lucifer.jpg")
+    }
+    
+    #catws{
+        background-image: url("../img/225px/catws.jpg")
+    }
+    
+    #riverdale{
+        background-image: url("../img/225px/riverdale.jpg")
+    }
+    
+    #daredevil{
+        background-image: url("../img/225px/daredevil.jpg")
+    }
+
 }
