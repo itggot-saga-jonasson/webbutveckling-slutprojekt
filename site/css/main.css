@@ -41,14 +41,15 @@ header h1{
     margin: auto;
 }
 
-.logo{
+#logo{
+    height: 90%;
+    width: inherit;
+    margin-right: inherit;
+    margin-left: 10px;
     background-image: url("../img/Nätflex.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 90%;
-    width: inherit;
     background-position: left;
-    margin-left: 10px;
 }
 
 .scroll-area{
@@ -85,6 +86,11 @@ header h1{
     cursor: default;
 }
 
+/* For some reason, not having an info button shifts the images */
+#empty{
+    visibility: hidden;
+}
+
 .info:hover .description{
     visibility: visible;
     animation: fadein 0.3s forwards;
@@ -97,24 +103,40 @@ header h1{
 .description{
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     position: fixed;
-    width: 150px;
+    width: 175px;
     position: relative;
     left: 0 !important;
     visibility: hidden;
     pointer-events: none !important;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .description p {
     margin: 10px;
     margin-top: 5px;
     color: black;
-    text-shadow:  0 0 0;
-    font-family: Verdana;
-    font-size: 0.7rem;
+    text-shadow:  none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;;
+    padding-bottom: 5px;
 }
 
+.description h2{
+    margin: 10px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    text-shadow:  none;
+    font-family: 'Proza Libre', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5px;
+}
 
+a{
+    text-decoration: none;
+}
 
 .back-deco {
     z-index: -10;
@@ -127,9 +149,9 @@ header h1{
 
 .subheader h1{
     margin: 5px;
-    color: gainsboro;
+    color: white;
     font-size: 2.5rem;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .subheader{
@@ -146,6 +168,29 @@ header h1{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.fa-star{
+    color: rgb(50, 50, 50) !important;
+    text-shadow: 0px 1px 0px black;
+    font-size: 1.5rem !important;
+}
+
+#checked, #halfstar{
+    color: orange !important;
+    text-shadow: 0px 1px 0px rgb(187, 121, 0);
+}
+
+.rating{
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    padding-bottom: 10px;
+}
+
+#halfstar {
+    position: absolute;
+    bottom: 13px;
+    width: 12px;    
+    overflow: hidden;
+}
 
 
 
@@ -299,9 +344,22 @@ header h1{
 
     .description{
         width: 200px;
-        font-size: 0.8rem;
     }
 
+    p{
+        font-size: 0.8rem !important;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px){
+    header h1{
+        font-size: 1rem;
+    }
+
+    .boxy{
+        margin: 2px 0 2px 0;
+    }
 }
 
 @media screen and (min-width: 500px){
@@ -316,6 +374,7 @@ header h1{
 }
 
 @media screen and (max-width: 500px){
+
     header h1{
         font-size: 0.65rem;
         margin-left: auto;
@@ -329,6 +388,7 @@ header h1{
     .boxy{
         height: 225px;
         width: 150px;
+        pointer-events: all;
     }
 
     .info{
