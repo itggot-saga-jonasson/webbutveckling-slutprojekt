@@ -15,10 +15,8 @@
 <body onresize="screenSize()" onload="screenSize()">
     <div class="wrapper">
 
-        <div class="cover"></div>
-        <div class="popup_descr">
-            hello
-        </div>
+        <div class="cover" onclick=noMoreMobileDescription()></div>
+        <div class="popup_descr"></div>
 
         <header>
             <a href="index.html" id="logo"></a>
@@ -32,10 +30,10 @@
             <div class="content-box">
 
                 <a href="" class="video_path" id="game_of_thrones.html">
-                    <div class="boxy" id="game_of_thrones" onclick=mobileDescription(game_of_thrones)>
+                    <div class="boxy" id="game_of_thrones" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description game_of_thrones">
                                 <h2>Game of Thrones</h2>
                                 <p>Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.</p>
                                 <div class="rating">
@@ -52,10 +50,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="salad_fingers.html">
-                    <div class="boxy" id="salad_fingers">
+                    <div class="boxy" id="salad_fingers" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description salad_fingers">
                                     <h2>Salad Fingers</h2>
                                 <p>The surreal life of Salad Fingers, an unknown creature living in an apocalyptic wasteland.</p>
                                 <div class="rating">
@@ -70,10 +68,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="avatar_the_last_airbender.html">
-                    <div class="boxy" id="avatar_the_last_airbender">
+                    <div class="boxy" id="avatar_the_last_airbender" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description avatar_the_last_airbender">
                                 <h2>Avatar: The last airbender</h2>
                                 <p>In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.</p>
                                 <div class="rating">
@@ -90,10 +88,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="sherlock.html">
-                    <div class="boxy" id="sherlock">
+                    <div class="boxy" id="sherlock" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description sherlock">
                                 <h2>Sherlock</h2>
                                 <p>A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.</p>
                                 <div class="rating">
@@ -110,10 +108,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="death_note.html">
-                    <div class="boxy" id="death_note">
+                    <div class="boxy" id="death_note" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description death_note">
                                 <h2>Death Note</h2>
                                 <p>An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.</p>
                                 <div class="rating">
@@ -130,10 +128,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="strangers_tongue.html">
-                    <div class="boxy" id="strangers_tongue"> <!-- do it for the meme-->
+                    <div class="boxy" id="strangers_tongue" onclick=mobileDescription(id)> <!-- do it for the meme-->
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description strangers_tongue">
                                 <h2>Stranger's Tongue</h2>
                                 <p>The award-winning Nätflex original, Stranger's Tongue tells the story of love, betrayal, trust and strangers.</p>
                                 <div class="rating">
@@ -148,10 +146,10 @@
                     </div> 
                 </a>
                 <a href="" class="video_path" id="love_death_robots.html">
-                    <div class="boxy" id="love_death_robots">
+                    <div class="boxy" id="love_death_robots" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description love_death_robots">
                                 <h2>Love, Death, Robots</h2>
                                 <p>A collection of animated short stories that span various genres including science fiction, fantasy, horror and comedy.</p>
                                 <div class="rating">
@@ -168,10 +166,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="the_walking_dead.html">
-                    <div class="boxy" id="the_walking_dead">
+                    <div class="boxy" id="the_walking_dead" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description the_walking_dead">
                                 <h2>The Walking Dead</h2>
                                 <p>Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins, and must lead a group of survivors to stay alive.</p>
                                 <div class="rating">
@@ -186,10 +184,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="the_handmaids_tale.html">
-                    <div class="boxy" id="the_handmaids_tale">
+                    <div class="boxy" id="the_handmaids_tale" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description the_handmaids_tale">
                                 <h2>The Handmaid's Tale</h2>
                                 <p>Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.</p>
                                 <div class="rating">
@@ -206,10 +204,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="westworld.html">
-                    <div class="boxy" id="westworld">
+                    <div class="boxy" id="westworld" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description westworld">
                                 <h2>Westworld</h2>
                                 <p>Set at the intersection of the near future and the reimagined past, explore a world in which every human appetite can be indulged without consequence.</p>
                                 <div class="rating">
@@ -243,10 +241,10 @@
             <div class="content-box">
 
                 <a href="" class="video_path" id="civil_war.html">
-                    <div class="boxy" id="civil_war">
+                    <div class="boxy" id="civil_war" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description civil_war">
                                 <h2>Captain America: Civil War</h2>
                                 <p>Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man.</p>
                                 <div class="rating">
@@ -261,10 +259,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="shawshank_redemption.html">
-                    <div class="boxy" id="shawshank_redemption">
+                    <div class="boxy" id="shawshank_redemption" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description shawshank_redemption">
                                 <h2>Shawshank Redemption</h2>
                                 <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
                                 <div class="rating">
@@ -281,10 +279,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="pulp_fiction.html">
-                    <div class="boxy" id="pulp_fiction">
+                    <div class="boxy" id="pulp_fiction" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description pulp_fiction">
                                 <h2>Pulp Fiction</h2>
                                 <p>The lives of two mob hitmen, a boxer, a gangster & his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
                                 <div class="rating">
@@ -301,10 +299,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="lord_of_the_rings.html">
-                    <div class="boxy" id="lord_of_the_rings">
+                    <div class="boxy" id="lord_of_the_rings" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description lord_of_the_rings">
                                 <h2>Lord of the Rings: The Fellowship of the Ring</h2>
                                 <p>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</p>
                                 <div class="rating">
@@ -321,10 +319,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="forrest_gump.html">
-                    <div class="boxy" id="forrest_gump">
+                    <div class="boxy" id="forrest_gump" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description forrest_gump">
                                 <h2>Forrest Gump</h2>
                                 <p>The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.</p>
                                 <div class="rating">
@@ -341,10 +339,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="spirited_away.html">
-                    <div class="boxy" id="spirited_away">
+                    <div class="boxy" id="spirited_away" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description spirited_away">
                                 <h2>Sprited Away</h2>
                                 <p>During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.</p>
                                 <div class="rating">
@@ -361,10 +359,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="avengers_endgame.html">
-                    <div class="boxy" id="avengers_endgame">
+                    <div class="boxy" id="avengers_endgame" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description avengers_endgame">
                                 <h2>Avengers: Endgame</h2>
                                 <p>After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.</p>
                                 <div class="rating">
@@ -379,10 +377,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="interstellar.html">
-                    <div class="boxy" id="interstellar">
+                    <div class="boxy" id="interstellar" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description interstellar">
                                 <h2>Interstellar</h2>
                                 <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
                                 <div class="rating">
@@ -416,10 +414,10 @@
             <div class="content-box">
 
                 <a href="" class="video_path" id="house_of_cards.html">
-                    <div class="boxy" id="house_of_cards">
+                    <div class="boxy" id="house_of_cards" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description house_of_cards">
                                 <h2>House of Cards</h2>
                                 <p>A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.</p>
                                 <div class="rating">
@@ -436,10 +434,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="dexter.html">
-                    <div class="boxy" id="dexter">
+                    <div class="boxy" id="dexter" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description dexter">
                                 <h2>Dexter</h2>
                                 <p>By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.</p>
                                 <div class="rating">
@@ -456,10 +454,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="orange_is_the_new_black.html">
-                    <div class="boxy" id="orange_is_the_new_black">
+                    <div class="boxy" id="orange_is_the_new_black" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description orange_is_the_new_black">
                                 <h2>Orange is the new Black</h2>
                                 <p>Convicted of a decade old crime of transporting drug money to an ex-girlfriend, normally law-abiding Piper Chapman is sentenced to a year and a half behind bars to face the reality of how life-changing prison can really be.</p>
                                 <div class="rating">
@@ -474,10 +472,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="six_feet_under.html">
-                    <div class="boxy" id="six_feet_under">
+                    <div class="boxy" id="six_feet_under" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description six_feet_under">
                                 <h2>Six Feet Under</h2>
                                 <p>A chronicle of the lives of a dysfunctional family who run an independent funeral home in Los Angeles.</p>
                                 <div class="rating">
@@ -494,10 +492,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="downton_abbey.html">
-                    <div class="boxy" id="downton_abbey">
+                    <div class="boxy" id="downton_abbey" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description downton_abbey">
                                 <h2>Downton Abbey</h2>
                                 <p>A chronicle of the lives of the British aristocratic Crawley family and their servants in the early 20th Century.</p>
                                 <div class="rating">
@@ -514,10 +512,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="the_good_place.html">
-                    <div class="boxy" id="the_good_place">
+                    <div class="boxy" id="the_good_place" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description the_good_place">
                                 <h2>The Good Place</h2>
                                 <p>Four people and their otherworldly frienemy struggle in the afterlife to define what it means to be good.</p>
                                 <div class="rating">
@@ -532,10 +530,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="sex_education.html">
-                    <div class="boxy" id="sex_education">
+                    <div class="boxy" id="sex_education" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description sex_education">
                                 <h2>Sex Education</h2>
                                 <p>A teenage boy with a sex therapist mother teams up with a high school classmate to set up an underground sex therapy clinic at school.</p>
                                 <div class="rating">
@@ -550,10 +548,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="vikings.html">
-                    <div class="boxy" id="vikings">
+                    <div class="boxy" id="vikings" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description vikings">
                                 <h2>Vikings</h2>
                                 <p>Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.</p>
                                 <div class="rating">
@@ -570,10 +568,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="the_office.html">
-                    <div class="boxy" id="the_office">
+                    <div class="boxy" id="the_office" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description the_office">
                                 <h2>The Office</h2>
                                 <p>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</p>
                                 <div class="rating">
@@ -590,10 +588,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="broadchurch.html">
-                    <div class="boxy" id="broadchurch">
+                    <div class="boxy" id="broadchurch" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description broadchurch">
                                 <h2>Broadchurch</h2>
                                 <p>The murder of a young boy in a small coastal town brings a media frenzy, which threatens to tear the community apart.</p>
                                 <div class="rating">
@@ -608,10 +606,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="jessica_jones.html">
-                    <div class="boxy" id="jessica_jones">
+                    <div class="boxy" id="jessica_jones" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description jessica_jones">
                                 <h2>Jessica Jones</h2>
                                 <p>Following the tragic end of her brief superhero career, Jessica Jones tries to rebuild her life as a private investigator, dealing with cases involving people with remarkable abilities in New York City.</p>
                                 <div class="rating">
@@ -643,10 +641,10 @@
             <div class="content-box">
 
                 <a href="" class="video_path" id="catws.html">
-                    <div class="boxy" id="catws">
+                    <div class="boxy" id="catws" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description catws">
                                 <h2>Captain America: The Winter Soldier</h2>
                                 <p>As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.</p>
                                 <div class="rating">
@@ -661,10 +659,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="riverdale.html">
-                    <div class="boxy" id="riverdale">
+                    <div class="boxy" id="riverdale" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description riverdale">
                                 <h2>Riverdale</h2>
                                 <p>While navigating the troubled waters of romance, school and family, Archie and his gang become entangled in dark Riverdale mysteries.</p>
                                 <div class="rating">
@@ -681,10 +679,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="daredevil.html">
-                    <div class="boxy" id="daredevil">
+                    <div class="boxy" id="daredevil" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description daredevil">
                                 <h2>Daredevil</h2>
                                 <p>A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.</p>
                                 <div class="rating">
@@ -701,10 +699,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="x-files.html">
-                    <div class="boxy" id="x-files">
+                    <div class="boxy" id="x-files" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description x-files">
                                 <h2>The X-Files</h2>
                                 <p>Two F.B.I. Agents, Fox Mulder the believer and Dana Scully the skeptic, investigate the strange and unexplained, while hidden forces work to impede their efforts.</p>
                                 <div class="rating">
@@ -721,10 +719,10 @@
                     </div>
                 </a>
                 <a href="" class="video_path" id="lucifer.html">
-                    <div class="boxy" id="lucifer">
+                    <div class="boxy" id="lucifer" onclick=mobileDescription(id)>
                         <div class="info"> 
                             <i class="material-icons">info</i>
-                            <div class="description">
+                            <div class="description lucifer">
                                 <h2>Lucifer</h2>
                                 <p>Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.</p>
                                 <div class="rating">

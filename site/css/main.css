@@ -55,6 +55,7 @@ header h1{
 .scroll-area{
     position: relative;
     top: 10%;
+    margin-left: 5px;
 }
 
 .content-box{
@@ -102,16 +103,14 @@ header h1{
 
 .description{
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    position: fixed;
     width: 175px;
     position: relative;
-    left: 0 !important;
     visibility: hidden;
     pointer-events: none !important;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.description p {
+p {
     margin: 10px;
     margin-top: 5px;
     color: black;
@@ -122,7 +121,7 @@ header h1{
     padding-bottom: 5px;
 }
 
-.description h2{
+h2{
     margin: 10px;
     margin-top: 5px;
     color: rgb(0, 0, 0);
@@ -183,16 +182,102 @@ a{
     margin: 0 auto 0 auto;
     width: fit-content;
     padding-bottom: 10px;
+    position: relative;
 }
 
 #halfstar {
     position: absolute;
-    bottom: 13px;
+    bottom: 12.5px;
     width: 12px;    
     overflow: hidden;
 }
 
 
+
+.popup_descr{
+    position: fixed;
+    /* height: 60%; */
+    width: 300px;
+    top: 12%;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 101;
+    background-color: rgba(255, 255, 255, 0.8);
+    visibility: hidden;
+}
+
+.cover{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible !important;
+    animation: fadein 0.3s forwards;
+}
+
+.invisible{
+    animation: fadeout 0.5s forwards;
+}
+
+.popup_descr h2{
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding: 10px 30px 10px 10px;
+}
+
+.popup_descr p{
+    font-size: 1rem;
+    padding: 0 10px 0 10px
+}
+
+.popup_descr .fa-star{
+    font-size: 2.5rem !important;
+    text-shadow: 0px 3px 0px black
+}
+
+.popup_descr #halfstar, .popup_descr #checked{
+    text-shadow: 0px 3px 0px rgb(187, 121, 0)
+}
+
+.popup_descr #halfstar{
+    bottom: 10px;
+    width: 20px;
+    overflow: hidden;
+}
+
+.popup_descr .rating{
+    margin-top: 20px;
+}
+
+.back{
+    background-color: rgba(150, 0, 0, 0.9);
+    border-style: none;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    right: 0;
+    border-radius: 0 0 0 50%;
+}
+
+.watch{
+    margin-top: 10px;
+    background-color: rgba(150, 0, 0, 0.9);
+    border-style: none;
+    width: 100%;
+}
+
+.watch h2{
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+}
 
 
 #game_of_thrones{
