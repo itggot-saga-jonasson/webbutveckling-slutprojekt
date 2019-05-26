@@ -6,19 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../img/Nätflex N.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nätflex</title>
 </head>
-<body>
+<body onresize="screenSizeVideo()" onload="screenSizeVideo()">
     <div class="wrapper">
 
         <header>
             <a href="../index.html" id="logo"></a>
             <h1>Because paying for five different streaming services is dumb.</h1>
         </header>
-        yes this is game of thrones page how can i help you
 
+        <div class="video-area">
+            <video controls >
+                <source src="../img/video/Google Translate explains GAME OF THRONES.mp4" type="video/mp4"> <!--Credit to Malinda Kathlyn Reese-->
+            </video>
+            
+            <div class="text_area">
+                <h2 class="title">Game of Thrones</h2>
+                <p class="episode">S1/E1 - Winter is coming</p>
+            </div>
+            
 
+            <button class="seasons" id="S1">
+                <p>Season 1 ></p>
+            </button>
+
+            <li class="episode_list">
+                <button class="episode_button selected" id="E1" onclick=episodeButton(id)>
+                    <p>Episode 1 - </p>
+                    <p class="episode_name">Winter is coming</p>
+                </button>
+                <button class="episode_button" id="E2" onclick=episodeButton(id)>
+                    <p>Episode 2 - </p>
+                    <p class="episode_name">The Kingsroad</p>
+                </button>
+                <button class="episode_button" id="E3" onclick=episodeButton(id)>
+                    <p>Episode 3 - </p>
+                    <p class="episode_name">Lord Snow</p>
+                </button>
+                <button class="episode_button" id="E4" onclick=episodeButton(id)>
+                    <p>Episode 4 - </p>
+                    <p class="episode_name">Cripples, Bastards, and Broken Things</p>
+                </button>
+                <button class="episode_button" id="E5" onclick=episodeButton(id)>
+                    <p>Episode 5 - </p>
+                    <p class="episode_name">The Wolf and the Lion</p>
+                </button>
+                <button class="episode_button" id="E6" onclick=episodeButton(id)>
+                    <p>Episode 6 - </p>
+                    <p class="episode_name">A Golden Crown</p>
+                </button>
+                <button class="episode_button" id="E7" onclick=episodeButton(id)>
+                    <p>Episode 7 - </p>
+                    <p class="episode_name">You Win or You Die</p>
+                </button>
+                <button class="episode_button" id="E8" onclick=episodeButton(id)>
+                    <p>Episode 8 - </p>
+                    <p class="episode_name">The Pointy End</p>
+                </button>
+                <button class="episode_button" id="E9" onclick=episodeButton(id)>
+                    <p>Episode 9 - </p>
+                    <p class="episode_name">Baelor</p>
+                </button>
+                <button class="episode_button" id="E10" onclick=episodeButton(id)>
+                    <p>Episode 10 - </p>
+                    <p class="episode_name">Fire and Blood</p>
+                </button>
+            </li>
+        </div>
+
+        <div class="back-deco"></div>
     </div>
+
+    <script src="../js/main.js"></script>
 </body>
+</html>

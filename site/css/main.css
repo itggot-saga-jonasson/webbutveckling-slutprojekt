@@ -41,6 +41,70 @@ header h1{
     margin: auto;
 }
 
+.video-area{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+video{
+    display: block;
+    margin: 0 auto;
+}
+
+.seasons{
+    margin: 0;
+    background-color: rgba(119, 119, 119, 0.9);
+    border-style: none;
+}
+
+.title, .episode{
+    color: white;
+    margin: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.episode_list{
+    display: grid;
+}
+
+.episode_button{
+    text-align: left;
+    background-color: rgb(55, 55, 55);
+    border-style: double;
+    border-color: rgb(55, 55, 55);
+}
+
+button:focus {
+    outline: -webkit-focus-ring-color none;
+}
+
+.selected{
+    border-style: ridge;
+    border-color: red !important;
+    background-color: rgba(90, 70, 70, 0.7) !important;
+}
+
+.episode_button:nth-child(odd){
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(70, 70, 70);
+}
+
+.episode_button p{
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text_area{
+    height: 110px;
+}
+
 #logo{
     height: 90%;
     width: inherit;
@@ -227,7 +291,7 @@ a{
 .popup_descr h2{
     font-size: 1.5rem;
     margin-top: 0;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 30px 0 10px;
 }
 
 .popup_descr p{
@@ -456,6 +520,10 @@ a{
     .boxy:not(:hover) .info{
         animation: fadeout 0.5s forwards;
     }
+
+    /* .episode_list{
+        margin: 0 0 0 0;
+    } */
 }
 
 @media screen and (max-width: 500px){

@@ -44,3 +44,25 @@ function screenSize(){
         }
     }
 }
+
+function screenSizeVideo(){
+
+    if(window.matchMedia("(min-width: 1200px)").matches) {
+        document.getElementsByTagName("video")[0].style.width = "60%";
+    } else if (window.matchMedia("(min-width: 500px)").matches) {
+        document.getElementsByTagName("video")[0].style.width = "80%";
+    } else {
+        document.getElementsByTagName("video")[0].style.width = "100%";
+    }
+
+}
+
+function episodeButton(episode){
+    document.getElementsByClassName("selected")[0].className = "episode_button"
+    document.getElementById(episode).className += " selected"
+
+    season = document.getElementsByClassName("seasons")[0].id;
+    episodeName = document.getElementById(episode).getElementsByClassName("episode_name")[0].innerHTML;
+
+    document.getElementsByClassName("episode")[0].innerHTML = season + "/" + episode + " - " + episodeName;
+}
