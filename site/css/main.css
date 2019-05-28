@@ -19,9 +19,9 @@ body {
     height: 100vh;
 }
 
-.wrapper{
+/* .wrapper{
     height: 100vh;
-}
+} */
 
 header{
     background-color: black;
@@ -52,10 +52,28 @@ video{
     margin: 0 auto;
 }
 
-.seasons{
+.seasons, .season_button{
+    margin: 0 0 0 10px;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid white;
+    border-bottom: none;
+    position: relative;
+    display: inline-block;
+    width: 120px;
+}
+
+.seasons h2, .season_button h2{
+    color: white;
+    margin: 10px;
+    pointer-events: none;
+}
+
+.season_button{
     margin: 0;
-    background-color: rgba(119, 119, 119, 0.9);
-    border-style: none;
+}
+
+.season_button:last-child{
+    border-bottom: 2px solid white;
 }
 
 .title, .episode{
@@ -73,13 +91,24 @@ video{
 .episode_button{
     text-align: left;
     background-color: rgb(55, 55, 55);
-    border-style: double;
+    border-style: solid;
     border-color: rgb(55, 55, 55);
 }
 
 button:focus {
     outline: -webkit-focus-ring-color none;
 }
+
+.season_list{
+    visibility: hidden;
+    width: 120px;
+    position: absolute;
+    right: -120px;
+    top: -50%;
+    display: grid;
+    z-index: 1000;
+}
+
 
 .selected{
     border-style: ridge;
@@ -90,6 +119,10 @@ button:focus {
 .episode_button:nth-child(odd){
     background-color: rgb(70, 70, 70);
     border-color: rgb(70, 70, 70);
+}
+
+.episode_button:nth-child(1){
+    border-top-color: white;
 }
 
 .episode_button p{
@@ -103,6 +136,10 @@ button:focus {
 
 .text_area{
     height: 110px;
+}
+
+#hidden{
+    background-color: transparent !important;
 }
 
 #logo{
@@ -521,12 +558,26 @@ a{
         animation: fadeout 0.5s forwards;
     }
 
-    /* .episode_list{
-        margin: 0 0 0 0;
-    } */
+    .season_list{
+        width: 480px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        top: unset;
+        bottom: 0;
+        right: -480px;
+    }
+
+    .season_button{
+        border-bottom: 2px solid white;
+        width: 120px;
+    }
 }
 
 @media screen and (max-width: 500px){
+
+    .seasons h2, .season_button h2{
+        font-size: 1rem;
+    }
 
     header h1{
         font-size: 0.65rem;

@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Nätflex</title>
+    <title>Nätflex - Game of Thrones</title>
 </head>
 <body onresize="screenSizeVideo()" onload="screenSizeVideo()">
     <div class="wrapper">
+
+        <div class="cover" id="hidden" onclick=seasonMenu()></div>
 
         <header>
             <a href="../index.html" id="logo"></a>
@@ -30,9 +32,28 @@
             </div>
             
 
-            <button class="seasons" id="S1">
-                <p>Season 1 ></p>
-            </button>
+            <div class="seasons" id="S1" onclick=seasonMenu()>
+                <h2>Season 1 ></h2>
+                <div class="season_list">
+                        <button class="season_button" id="S1" onclick=gotSeasonButton(id)>
+                            <h2>Season 1</h2>
+                        </button>
+                        <button class="season_button" id="S2" onclick=gotSeasonButton(id)>
+                            <h2>Season 2</h2>
+                        </button>
+                        <button class="season_button" id="S3" onclick=gotSeasonButton(id)>
+                            <h2>Season 3</h2>
+                        </button>
+                        <button class="season_button" id="S4" onclick=gotSeasonButton(id)>
+                            <h2>Season 4</h2>
+                        </button>
+                        <button class="season_button" id="S5" onclick=gotSeasonButton(id)>
+                            <h2>Season 5</h2>
+                        </button>
+                    </div>
+            </div>
+
+            
 
             <li class="episode_list">
                 <button class="episode_button selected" id="E1" onclick=episodeButton(id)>
