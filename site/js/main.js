@@ -90,36 +90,211 @@ function episodeButton(episode){
 }
 
 function gotSeasonButton(season){
-    S1 =[
+    S1 = [
         'Winter is coming',
         'The Kingsroad',
         'Lord Snow',
         'Cripples, Bastards, and Broken Things',
+        'The Wolf and the Lion',
+        'A Golden Crown',
+        'You Win or You Die',
+        'The Pointy End',
+        'Baelor',
+        'Fire and Blood'
+    ]
+
+    S2 = [
+        "The North Remembers",
+        "The Night Lands",
+        "What Is Dead May Never Die",
+        "Garden of Bones",
+        "The Ghost of Harrenhal",
+        "The Old Gods and the New",
+        "A Man Without Honor",
+        "The Prince of Winterfell",
+        "Blackwater",
+        "Valar Morghulis"
+    ]
+
+    S3 = [
+        "Valar Dohaeris",
+        "Dark Wings, Dark Words",
+        "Walk of Punishment",
+        "And Now His Watch Is Ended",
+        "Kissed by Fire",
+        "The Climb",
+        "The Bear and the Maiden Fair",
+        "Second Sons",
+        "The Rains of Castamere",
+        "Mhysa"
+    ]
+
+    S4 = [
+        "Two Swords",
+        "The Lion and the Rose",
+        "Breaker of Chains",
+        "Oathkeeper",
+        "First of His Name",
+        "The Laws of Gods and Men",
+        "Mockingbird",
+        "The Mountain and the Viper",
+        "The Watchers on the Wall",
+        "The Children"
+    ]
+
+    S5 = [
+        "The Wars to Come",
+        "The House of Black and White",
+        "High Sparrow",
+        "Sons of the Harpy",
+        "Kill the Boy",
+        "Unbowed, Unbent, Unbroken",
+        "The Gift",
+        "Hardhome",
+        "The Dance of Dragons",
+        "Mother's Mercy"
+    ]
+
+    S6 = [
+        "The Red Woman",
+        "Home",
+        "Oathbreaker",
+        "Book of the Stranger",
+        "The Door",
+        "Blood of My Blood",
+        "The Broken Man",
+        "No One",
+        "Battle of the Bastards",
+        "The Winds of Winter"
+    ]
+
+    S7 = [
+        "Dragonstone",
+        "Stormborn",
+        "The Queen's Justice",
+        "The Spoils of War",
+        "Eastwatch",
+        "Beyond the Wall",
+        "The Dragon and the Wolf"
+    ]
+
+    S8 = [
+        "Winterfell",
+        "A Knight of the Seven Kingdoms",
+        "The Long Night",
+        "The Last of the Starks",
+        "The Bells",
+        "The Iron Throne"
     ]
 
     episodeList = document.getElementsByClassName("episode_list")[0];
     episode = document.getElementsByClassName("episode")[0].innerHTML.substr(0, 5);
-    seasonId = document.getElementsByClassName("seasons")
-
+    seasonId = document.getElementsByClassName("seasons")[0];
 
     i = 0
     episodeList.innerHTML = ""
+
+
+
+    seasonId.getElementsByTagName("h2")[0].innerHTML = "Season " + season.substr(1,season.length) + " > "
+    seasonId.id = season
     if(season === "S1"){
-        seasonId.innerHTML = "Season 1 >"
-        seasonId.id = "S1"
 
        while(i < S1.length){
         episodeList.innerHTML += epGen(i+1, S1[i])
         i +=1
         
-        sEp = season + "/E" + i
-        console.log(sEp)
-        console.log(episode)
-        // if(sEp == episode){
-        //     document.getElementsByClassName("episode_name")[i].className += " selected"
-        // }
+        if(season + "/E" + i == episode){
+            document.getElementsByClassName("episode_button")[i-1].className += " selected"
+        }
+        
        }
+    } else if(season === "S2"){
+
+       while(i < S2.length){
+        episodeList.innerHTML += epGen(i+1, S2[i])
+        i +=1
+        
+        if(season + "/E" + i == episode){
+            document.getElementsByClassName("episode_button")[i-1].className += " selected"
+        }
+
+       }
+    } else if(season === "S3"){
+
+        while(i < S3.length){
+         episodeList.innerHTML += epGen(i+1, S3[i])
+         i +=1
+         
+         if(season + "/E" + i == episode){
+             document.getElementsByClassName("episode_button")[i-1].className += " selected"
+         }
+ 
+        }
+
+    } else if(season === "S4"){
+
+        while(i < S4.length){
+         episodeList.innerHTML += epGen(i+1, S4[i])
+         i +=1
+         
+         if(season + "/E" + i == episode){
+             document.getElementsByClassName("episode_button")[i-1].className += " selected"
+         }
+ 
+        }
+
+    } else if(season === "S5"){
+
+        while(i < S5.length){
+         episodeList.innerHTML += epGen(i+1, S5[i])
+         i +=1
+         
+         if(season + "/E" + i == episode){
+             document.getElementsByClassName("episode_button")[i-1].className += " selected"
+         }
+ 
+        }
+
+    } else if(season === "S6"){
+
+        while(i < S6.length){
+         episodeList.innerHTML += epGen(i+1, S6[i])
+         i +=1
+         
+         if(season + "/E" + i == episode){
+             document.getElementsByClassName("episode_button")[i-1].className += " selected"
+         }
+ 
+        }
+
+    } else if(season === "S7"){
+
+        while(i < S7.length){
+         episodeList.innerHTML += epGen(i+1, S7[i])
+         i +=1
+         
+         if(season + "/E" + i == episode){
+             document.getElementsByClassName("episode_button")[i-1].className += " selected"
+         }
+ 
+        }
+
+    } else if(season === "S8"){
+
+        while(i < S8.length){
+         episodeList.innerHTML += epGen(i+1, S8[i])
+         i +=1
+         
+         if(season + "/E" + i == episode){
+             document.getElementsByClassName("episode_button")[i-1].className += " selected"
+         }
+ 
+        }
+
     }
+
+
 }
 
 function epGen(num, title){

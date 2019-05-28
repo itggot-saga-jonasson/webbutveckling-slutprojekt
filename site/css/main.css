@@ -19,9 +19,9 @@ body {
     height: 100vh;
 }
 
-/* .wrapper{
+.wrapper{
     height: 100vh;
-} */
+}
 
 header{
     background-color: black;
@@ -70,6 +70,12 @@ video{
 
 .season_button{
     margin: 0;
+    background-color:rgb(80, 40, 40) !important;
+}
+
+.season_button:nth-child(odd){
+    background-color:rgb(80, 28, 28) !important;
+    border-color: red !important;
 }
 
 .season_button:last-child{
@@ -104,9 +110,9 @@ button:focus {
     width: 120px;
     position: absolute;
     right: -120px;
-    top: -50%;
+    top: -180px;
     display: grid;
-    z-index: 1000;
+    z-index: 80;
 }
 
 
@@ -311,7 +317,7 @@ a{
     position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 100;
+    z-index: 50;
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
 }
@@ -521,9 +527,24 @@ a{
     background-image: url("../img/270px/daredevil.jpg")
 }
 
+@media screen and (min-width: 1800px){
+    .season_list{
+        width: 1600px !important;
+        right: -1600px !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    }
+}
 
+@media screen and (min-width: 1600px) and (max-width: 1800px){ 
+    .season_list{
+        width: 1200px !important;
+        right: -1200px !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    }
 
-@media screen and (min-width: 1600px){ 
+}
+
+@media screen and (min-width: 1600px){
     h1{
         font-size: 2rem;
     }
@@ -533,9 +554,21 @@ a{
     }
 
     p{
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
     }
 
+    .episode_button p{
+        font-size: 1.2rem !important;
+        padding-left: 10px;
+    }
+
+    .seasons h2{
+        font-size: 1.8rem;
+    }
+
+    .seasons, .season_button {
+        width: 200px !important;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 850px){
