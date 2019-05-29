@@ -115,7 +115,6 @@ button:focus {
     z-index: 80;
 }
 
-
 .selected{
     border-style: ridge;
     border-color: red !important;
@@ -147,6 +146,15 @@ button:focus {
 #hidden{
     background-color: transparent !important;
 }
+
+.banner{
+    background-color: rgb(15, 15, 15);
+}
+
+
+
+
+
 
 #logo{
     height: 90%;
@@ -526,6 +534,10 @@ a{
 #daredevil{
     background-image: url("../img/270px/daredevil.jpg")
 }
+
+
+
+
 
 @media screen and (min-width: 1800px){
     .season_list{
